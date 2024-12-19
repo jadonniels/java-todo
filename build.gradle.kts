@@ -1,6 +1,7 @@
 plugins {
     id("org.springframework.boot") version "3.2.0"
     id("io.spring.dependency-management") version "1.1.0"
+    id("application")
     java
 }
 
@@ -37,5 +38,5 @@ tasks.withType<Test> {
 }
 
 application {
-    mainClass.set("com.jadon.todo.TodoApp")
+    mainClass.set("com.jadon.todo.TodoApplication")
 }
